@@ -12,9 +12,11 @@ img {
 }
 
 body {
+  margin: 0;
   font-family: $primary-font;
   color: $primary-text-color;
   font-style: $primary-font-style;
   font-size: $primary-font-size;
   line-height: $primary-line-heigth;
+  background-color: $primary-bg;
 }

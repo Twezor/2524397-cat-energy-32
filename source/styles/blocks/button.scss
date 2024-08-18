@@ -1,3 +1,9 @@
 .button {
-  background-color: #ffffff;
+  font-family: $secondary-font;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 26px;
+  background-color: $secondary-bg;
+  text-transform: uppercase;
+  border: none;
 }
