@@ -13,6 +13,9 @@
   line-height: 37px;
   color: #000000;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  height: 100px;
 }
 
 .program__link {
@@ -22,4 +25,18 @@
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.program__title--slim {
+  background-image: url("../../icons/stack.svg#cat-slim");
+  background-size: 36px 50px;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.program__title--pro {
+  background-image: url("../../icons/stack.svg#cat-pro");
+  background-size: 67px 28px;
+  background-position: left;
+  background-repeat: no-repeat;
 }

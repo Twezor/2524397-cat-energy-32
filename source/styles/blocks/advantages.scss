@@ -1,3 +1,7 @@
+.advantages {
+  background-color: #68b738;
+}
+
 .advantages__title {
   font-family: $secondary-font;
   font-weight: 400;
@@ -10,4 +14,32 @@
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.advantages__item--content {
+  background-image: url("../../icons/stack.svg#leaf");
+  background-size: 30px 32px;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.advantages__item--cooking {
+  background-image: url("../../icons/stack.svg#glass");
+  background-size: 26px 29px;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.advantages__item--nutrition {
+  background-image: url("../../icons/stack.svg#eat");
+  background-size: 25px 30px;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.advantages__item--progress {
+  background-image: url("../../icons/stack.svg#clocks");
+  background-size: 26px 31px;
+  background-position: left;
+  background-repeat: no-repeat;
 }

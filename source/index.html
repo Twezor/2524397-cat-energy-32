@@ -16,10 +16,18 @@
 <body class="body">
   <header class="header">
     <a class="header__logo logo" href="index.html">
-      <img class="logo__img" src="#" alt="Логотип Кэт Энерджи" width="33" height="38" />
+      <picture>
+        <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
+        <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+        <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+      </picture>
     </a>
     <a class="header__text-logo text-logo" href="index.html">
-      <img class="text-logo__img" src="#" alt="Cat energy" width="101" height="18" />
+      <picture>
+        <source media="(min-width: 1440px)" srcset="images/text-logo-desktop.svg" width="118" height="21" type="image/svg+xml">
+        <source media="(min-width: 768px)" srcset="images/text-logo-tablet.svg" width="101" height="18" type="image/svg+xml">
+        <img src="images/text-logo-mobile.svg" width="101" height="18" alt="Cat Energy.">
+      </picture>
     </a>
     <nav class="header__nav nav">
       <button class="nav__toggle" type="button">
@@ -100,7 +108,10 @@
         <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x">
         <img class="example__image example__image--before" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Кот до питания Cat energy" />
       </picture>
-      <button class="example__slider" type="button">|</button>
+      <button class="example__slider" type="button">
+        <span class="visually-hidden">Ползунок для сравнения кота до и после питания Cat energy</span>
+        <img class="example__triangles" src="images/triangles.svg" width="24" height="18" alt="Ползунок">
+      </button>
       <picture>
         <source width="560" height="512" type="image/png" media="(min-width: 1440px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x">
         <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x">
@@ -124,7 +135,12 @@
   </main>
   <footer class="footer">
     <a class="footer__text-logo text-logo" href="index.html">
-      <img class="text-logo__img" src="#" alt="Cat energy" width="101" height="18" />
+      <picture>
+        <source media="(min-width: 1440px)" srcset="images/text-logo-desktop.svg" width="128" height="24" type="image/svg+xml">
+        <source media="(min-width: 768px)" srcset="images/text-logo-tablet.svg" width="128" height="24" type="image/svg+xml">
+        <img src="images/text-logo-mobile.svg" width="128" height="24" alt="Текстовый логотип Cat Energy.">
+      </picture>
+    </a>
     </a>
     <ul class="footer__social-list social">
       <li class="social__item">
@@ -145,7 +161,11 @@
     </ul>
     <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
       <span class="copyright__text">HTML Academy</span>
-      <img class="copyright__logo" src="#" width="27" height="34" alt="Логотип HTML Academy" />
+      <picture>
+        <source media="(min-width: 1440px)" srcset="images/html-logo-desktop.svg" width="27" height="34" type="image/svg+xml">
+        <source media="(min-width: 768px)" srcset="images/html-logo-tablet.svg" width="27" height="34" type="image/svg+xml">
+        <img src="images/html-logo-mobile.svg" width="27" height="34" alt="Логотип HTML Academy">
+      </picture>
     </a>
   </footer>
 </body>
