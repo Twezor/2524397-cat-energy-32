@@ -1,45 +1,92 @@
-.advantages {
-  background-color: #68b738;
-}
 
 .advantages__title {
-  font-family: $secondary-font;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 40px;
-  color: #000000;
+  @include font($sec-font, $pr-font-style, $pr-font-weight, 36px, 40px, #000000);
+}
+
+.advantages__description {
+  @include font($pr-font, $pr-font-style, $pr-font-weight, $pr-font-size, $pr-line-height, $pr-color);
 }
 
 .advantages__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  padding-left: 80px;
 }
 
-.advantages__item--content {
+.advantages__item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 24px;
+  height: 60px; /* УДАЛИТЬ */
+}
+
+.advantages__item::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: $sec-bg;
+  left: -80px;
+}
+
+.advantages__item--content::before {
+  content: "";
+  position: absolute;
   background-image: url("../../icons/stack.svg#leaf");
-  background-size: 30px 32px;
-  background-position: left;
-  background-repeat: no-repeat;
+  width: 30px;
+  height: 32px;
+  left: -65px;
+  z-index: 1;
 }
 
-.advantages__item--cooking {
+.advantages__item--cooking::before {
+  content: "";
+  position: absolute;
   background-image: url("../../icons/stack.svg#glass");
-  background-size: 26px 29px;
-  background-position: left;
-  background-repeat: no-repeat;
+  width: 26px;
+  height: 29px;
+  left: -65px;
+  z-index: 1;
 }
 
-.advantages__item--nutrition {
+.advantages__item--nutrition::before {
+  content: "";
+  position: absolute;
   background-image: url("../../icons/stack.svg#eat");
-  background-size: 25px 30px;
-  background-position: left;
-  background-repeat: no-repeat;
+  width: 25px;
+  height: 30px;
+  left: -65px;
+  z-index: 1;
 }
 
-.advantages__item--progress {
+.advantages__item--progress::before {
+  content: "";
+  position: absolute;
   background-image: url("../../icons/stack.svg#clocks");
-  background-size: 26px 31px;
-  background-position: left;
-  background-repeat: no-repeat;
+  width: 26px;
+  height: 31px;
+  left: -65px;
+  z-index: 1;
+}
+
+@media (min-width: $tablet) {
+  .advantages__title {
+    @include font($sec-font, $pr-font-style, $pr-font-weight, 60px, 60px, #000000);
+  }
+
+  .advantages__description {
+    @include font($pr-font, $pr-font-style, $pr-font-weight, 16px, 24px, $pr-color);
+  }
+}
+
+@media (min-width: $desktop) {
+  .advantages__title {
+    @include font($sec-font, $pr-font-style, $pr-font-weight, 60px, 60px, #000000);
+  }
+
+  .advantages__description {
+    @include font($pr-font, $pr-font-style, $pr-font-weight, 16px, 24px, $pr-color);
+  }
 }
