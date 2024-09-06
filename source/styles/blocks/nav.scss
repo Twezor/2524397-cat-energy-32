@@ -1,4 +1,12 @@
+.nav {
+  max-width: 279px;
+  position: relative;
+}
+
 .nav__list {
+  position: absolute;
+  top: 66px;
+  left: -275px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -9,9 +17,13 @@
   }
 }
 
+.nav__item {
+  background-color: #ffffff;
+  width: 320px;
+}
+
 .burger-wrapper {
   position: relative;
-  margin-left: 166px;
   width: 24px;
   height: 16px;
 
