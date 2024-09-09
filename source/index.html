@@ -19,25 +19,20 @@
       <picture>
         <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
         <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
-        <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+        <img class="logo__img" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
       </picture>
     </a>
     <a class="header__text-logo text-logo" href="index.html">
       <picture>
         <source media="(min-width: 1440px)" srcset="images/text-logo-desktop.svg" width="118" height="21" type="image/svg+xml">
         <source media="(min-width: 768px)" srcset="images/text-logo-tablet.svg" width="101" height="18" type="image/svg+xml">
-        <img src="images/text-logo-mobile.svg" width="101" height="18" alt="Cat Energy">
+        <img class="text-logo__img" src="images/text-logo-mobile.svg" width="101" height="18" alt="Cat Energy">
       </picture>
     </a>
     <nav class="header__nav nav">
-      <div class="burger-wrapper burger">
-        <input class="burger__input" type="checkbox" name="burger-input" id="burger-input">
-        <label class="visually-hidden" for="burger-input">Меню</label>
-        <div class="burger__line first-line"></div>
-        <div class="burger__line second-line"></div>
-        <div class="burger__line third-line"></div>
-        <div class="burger__line fourth-line"></div>
-      </div>
+      <button class="nav__toggle" type="button">
+        <span class="visually-hidden">Меню</span>
+      </button>
       <ul class="nav__list">
         <li class="nav__item nav__item--current">
           <a class="nav__link" href="#">Главная</a>

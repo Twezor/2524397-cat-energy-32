@@ -1,9 +1,18 @@
 .program {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .program__item {
   background-color: #f2f2f2;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    padding: 77px 63px 53px 52px;
+  }
 }
 
 .program__title {
@@ -12,8 +21,12 @@
   position: relative;
   padding-top: 30px;
   padding-left: 90px;
+  margin: 0;
+  margin-bottom: 29px;
 
   @media (min-width: $tablet) {
+    padding: 0;
+    margin-bottom: 24px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -28,6 +41,13 @@
   border-radius: 50%;
   left: 20px;
   top: 24px;
+
+  @media (min-width: $tablet) {
+    width: 200px;
+    height: 200px;
+    left: 393px;
+    top: 15px;
+  }
 }
 
 .program__title--slim::before {
@@ -40,6 +60,13 @@
   left: 27px;
   top: 21px;
   z-index: 1;
+
+  @media (min-width: $tablet) {
+    width: 140px;
+    height: 194px;
+    top: 4px;
+    left: 423px;
+  }
 }
 
 .program__title--pro::before {
@@ -52,12 +79,23 @@
   left: 13px;
   top: 35px;
   z-index: 1;
+
+  @media (min-width: $tablet) {
+    width: 268px;
+    height: 112px;
+    left: 359px;
+    top: 58px;
+  }
 }
 
 .program__description {
   @include font($pr-font, $pr-font-style, $pr-font-weight, $pr-font-size, $pr-line-height, $pr-color);
+  margin: 0 33px 23px 20px;
 
   @media (min-width: $tablet) {
+    margin: 0;
+    margin-bottom: 48px;
+    margin-right: 273px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -70,10 +108,21 @@
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
+  margin: 0 20px;
+  padding-top: 15px;
+  padding-bottom: 18px;
+  border-top: 1px solid rgba(217, 217, 217, 1);
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    border: none;
+  }
 
   &::after {
     content: "";
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     width: 24px;
     height: 12px;
     background-image: url("../../icons/stack.svg#arrow");

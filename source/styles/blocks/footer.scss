@@ -1,8 +1,12 @@
 .footer {
   background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
-.footer__social-list {
-  margin: 0;
-  padding: 0;
+.footer__text-logo {
+  margin: 0 auto;
+  padding: 20px 0;
 }

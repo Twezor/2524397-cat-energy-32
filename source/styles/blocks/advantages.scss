@@ -1,6 +1,11 @@
+.advantages {
+  padding: 0 20px;
+}
 
 .advantages__title {
   @include font($sec-font, $pr-font-style, $pr-font-weight, 36px, 40px, #000000);
+  margin: 0;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet) {
     font-size: 60px;
@@ -10,6 +15,7 @@
 
 .advantages__description {
   @include font($pr-font, $pr-font-style, $pr-font-weight, $pr-font-size, $pr-line-height, $pr-color);
+  margin: 0;
 
   @media (min-width: $tablet) {
     font-size: 16px;
@@ -22,14 +28,27 @@
   padding: 0;
   list-style: none;
   padding-left: 80px;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 37px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .advantages__item {
   display: flex;
   align-items: center;
   position: relative;
-  margin-bottom: 24px;
-  height: 60px; /* УДАЛИТЬ */
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    max-width: 250px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 
   &::after {
     content: "";

@@ -1,7 +1,39 @@
+.more-product {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 0;
+}
+
+.more-product::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: -20px;
+  width: calc(100% + 40px);
+  height: 1px;
+  background-color: #ebebeb;
+}
+
+.more-product::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 100%;
+  left: -20px;
+  width: calc(100% + 40px);
+  height: 1px;
+  background-color: #ebebeb;
+}
+
 .more-product__title {
   @include font($sec-font, $pr-font-style, $pr-font-weight, 16px, 20px, #111111);
   text-transform: uppercase;
   position: relative;
+  margin-top: 53px;
+  margin-bottom: 8px;
+  text-align: center;
 
   @media (min-width: $tablet) {
     font-size: 20px;
@@ -13,9 +45,9 @@
     position: absolute;
     display: block;
     background-color: #d3d3d3;
-    width: 60px;
+    width: 30px;
     height: 2px;
-    top: 30px;
+    top: -38px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -26,17 +58,25 @@
     display: block;
     background-color: #d3d3d3;
     width: 2px;
-    height: 60px;
-    top: 0;
+    height: 30px;
+    top: -53px;
     left: 50%;
   }
 }
 
 .more-product__subtitle {
   @include font($pr-font, $pr-font-style, $pr-font-weight, 12px, 16px, $pr-color);
+  text-align: center;
+  margin-bottom: 21px;
 
   @media (min-width: $tablet) {
     font-size: 16px;
     line-height: 18px;
   }
+}
+
+.more-product__button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
 }

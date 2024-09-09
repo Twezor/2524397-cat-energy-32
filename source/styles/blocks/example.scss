@@ -1,5 +1,12 @@
+.example {
+  padding: 25px 20px 40px;
+  background-color: #eaeaea;
+}
+
 .example__title {
   @include font($sec-font, $pr-font-style, $pr-font-weight, 36px, 40px, #000000);
+  margin: 0;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet) {
     font-size: 60px;
@@ -9,6 +16,7 @@
 
 .example__description {
   @include font($pr-font, $pr-font-style, $pr-font-weight, $pr-font-size, $pr-line-height, $pr-color);
+  margin-bottom: 20px;
 
   @media (min-width: $tablet) {
     font-size: 16px;
@@ -17,14 +25,31 @@
 }
 
 .example__list {
-  margin: 0;
+  max-width: 280px;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 34px;
+}
+
+.example__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .example__result {
   @include font($sec-font, $pr-font-style, $pr-font-weight, 24px, 24px, #000000);
   text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 124px;
+  height: 56px;
+  border: 2px solid #cdcdcd;
+  border-radius: 5px;
 
   @media (min-width: $tablet) {
     font-size: 30px;
@@ -35,6 +60,10 @@
 .example__text {
   @include font($pr-font, $pr-font-style, $pr-font-weight, 12px, 12px, $pr-color);
   text-transform: lowercase;
+  width: 80px;
+  text-align: center;
+  margin: -10px;
+  background-color: #eaeaea;
 
   @media (min-width: $tablet) {
     font-size: 14px;
@@ -45,6 +74,8 @@
 .example__price {
   @include font($sec-font, $pr-font-style, $pr-font-weight, $pr-font-size, 20px, #000000);
   text-transform: uppercase;
+  text-align: center;
+  margin: 0;
 
   @media (min-width: $tablet) {
     font-size: 20px;
