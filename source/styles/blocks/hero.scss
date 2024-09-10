@@ -14,6 +14,10 @@
     padding-top: 65px;
     margin-bottom: 0;
   }
+
+  @media (min-width: $desktop) {
+    padding-top: 29px;
+  }
 }
 
 .hero__title {
@@ -34,6 +38,11 @@
     line-height: 60px;
     color: #000000;
   }
+
+  @media (min-width: $desktop) {
+    margin-top: 110px;
+    margin-left: 190px;
+  }
 }
 
 .hero__subtitle {
@@ -52,6 +61,10 @@
     color: #000000;
     margin-bottom: 50px;
   }
+
+  @media (min-width: $desktop) {
+    margin-left: 190px;
+  }
 }
 
 .hero__img {
@@ -60,13 +73,15 @@
   margin-bottom: 3px;
 
   @media (min-width: $tablet) {
+    margin: 0;
     margin-top: -75px;
+    margin-left: 30px;
   }
 
   @media (min-width: $desktop) {
-    position: absolute;
-    top: 143px;
-    left: 0;
+    margin: 0;
+    margin-top: -367px;
+    margin-left: 557px;
   }
 }
 
@@ -84,5 +99,9 @@
     margin-left: 120px;
     padding: 14px 26px;
     z-index: 1;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 190px;
   }
 }

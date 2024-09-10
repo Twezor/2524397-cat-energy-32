@@ -6,6 +6,11 @@
   align-items: center;
   text-decoration: none;
   padding: 20px 0;
+
+  @media (min-width: $tablet) {
+    width: 168px;
+    padding: 0;
+  }
 }
 
 .copyright__img {

@@ -4,9 +4,18 @@
   flex-direction: column;
   align-items: center;
   padding: 20px;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 55px 30px;
+  }
 }
 
 .footer__text-logo {
-  margin: 0 auto;
-  padding: 20px 0;
+  margin: 20px 0;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+  }
 }

@@ -1,3 +1,9 @@
+.types {
+  @media (min-width: $desktop) {
+    padding: 0 110px;
+  }
+}
+
 .types__list {
   margin: 0;
   padding: 0;

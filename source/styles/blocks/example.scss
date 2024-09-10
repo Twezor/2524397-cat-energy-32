@@ -1,6 +1,30 @@
 .example {
   padding: 25px 20px 40px;
   background-color: #eaeaea;
+
+  @media (min-width: $tablet) {
+    padding: 45px 30px 101px;
+  }
+
+  @media (min-width: $desktop) {
+    position: relative;
+    padding: 70px 110px 75px;
+  }
+}
+
+.example__wrapper {
+  @media (min-width: $tablet) {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: column;
+    align-items: start;
+    gap: 55px;
+  }
 }
 
 .example__title {
@@ -12,6 +36,12 @@
     font-size: 60px;
     line-height: 60px;
   }
+
+  @media (min-width: $desktop) {
+    position: relative;
+    top: -205px;
+    margin: 0;
+  }
 }
 
 .example__description {
@@ -19,6 +49,7 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet) {
+    margin-bottom: 55px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -32,12 +63,23 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 34px;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    gap: 43px;
+  }
 }
 
 .example__item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 2px solid #cdcdcd;
+  border-radius: 5px;
+
+  @media (min-width: $tablet) {
+    width: 162px;
+  }
 }
 
 .example__result {
@@ -48,8 +90,6 @@
   align-items: center;
   width: 124px;
   height: 56px;
-  border: 2px solid #cdcdcd;
-  border-radius: 5px;
 
   @media (min-width: $tablet) {
     font-size: 30px;
@@ -78,7 +118,15 @@
   margin: 0;
 
   @media (min-width: $tablet) {
+    max-width: 174px;
+    text-align: end;
     font-size: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
