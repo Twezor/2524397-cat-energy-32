@@ -26,6 +26,23 @@
   }
 }
 
+.nav__list--nojs {
+  display: block;
+  position: static;
+}
+
+.nav__list--nojs + .nav__toggle {
+  display: none;
+}
+
+.nav__list--closed {
+  display: none;
+}
+
+.nav__list--opened {
+  display: block;
+}
+
 .nav__item {
   background-color: #ffffff;
   padding: 22px 0 24px;
@@ -41,6 +58,7 @@
   display: block;
   position: relative;
   padding: 0;
+  cursor: pointer;
   border: none;
   width: 24px;
   height: 2px;

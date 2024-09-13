@@ -1,7 +1,6 @@
 .contacts__text {
   display: flex;
-  max-width: 320px;
-  margin: 0 auto;
+  justify-content: space-between;
   margin-bottom: 26px;
   padding: 26px 20px 0;
 
@@ -46,6 +45,16 @@
 }
 
 .contacts__img {
+  display: block;
+  width: 100%;
+}
+
+.contacts iframe {
+  background-image: url("../../images/location-mobile@2x.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  border: none;
   display: block;
   width: 100%;
 }

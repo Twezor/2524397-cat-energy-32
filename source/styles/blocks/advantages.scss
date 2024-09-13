@@ -51,13 +51,13 @@
 
   @media (min-width: $tablet) {
     flex-flow: row wrap;
-    gap: 37px;
+    gap: 37px 137px;
     font-size: 60px;
     line-height: 60px;
   }
 
-  @media (min-width: $tablet) {
-    gap: 94px;
+  @media (min-width: $desktop) {
+    gap: 80px;
   }
 }
 

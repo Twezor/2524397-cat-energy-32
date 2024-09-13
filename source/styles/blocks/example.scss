@@ -1,14 +1,17 @@
 .example {
   padding: 25px 20px 40px;
   background-color: #eaeaea;
+  position: relative;
 
   @media (min-width: $tablet) {
     padding: 45px 30px 101px;
+    background-image: linear-gradient(to bottom, (#ffffff 60%, #f2f2f2 60%));
   }
 
   @media (min-width: $desktop) {
     position: relative;
     padding: 70px 110px 75px;
+    background-image: linear-gradient(to bottom, (#ffffff 22%, #f2f2f2 22%));
   }
 }
 
@@ -18,12 +21,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 99px;
   }
 
   @media (min-width: $desktop) {
     flex-direction: column;
     align-items: start;
     gap: 55px;
+    margin-bottom: 0;
   }
 }
 
@@ -38,9 +43,7 @@
   }
 
   @media (min-width: $desktop) {
-    position: relative;
-    top: -205px;
-    margin: 0;
+    margin-bottom: 146px;
   }
 }
 
@@ -52,6 +55,10 @@
     margin-bottom: 55px;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-right: 784px;
   }
 }
 
@@ -106,8 +113,13 @@
   background-color: #eaeaea;
 
   @media (min-width: $tablet) {
+    background-color: #ffffff;
     font-size: 14px;
     line-height: 14px;
+  }
+
+  @media (min-width: $desktop) {
+    background-color: #f2f2f2;
   }
 }
 
@@ -116,6 +128,7 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet) {
     max-width: 174px;
@@ -127,19 +140,20 @@
     max-width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 0;
   }
 }
 
 .example__slider {
   display: block;
-  position: relative;
+  position: absolute;
   padding: 0;
   border: none;
   width: 4px;
-  height: 256px; //заменить на 100% после сеток
+  height: 100%;
   background-color: #666666;
   cursor: pointer;
-  margin-left: 138px; //заменить после сеток
+  left: 50%;
 
   &:hover {
     background-color: $sec-bg;
@@ -179,4 +193,35 @@
   &:hover::after {
     background-color: $sec-bg;
   }
+}
+
+.example__slider-wrapper {
+  position: relative;
+  max-width: 280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $tablet) {
+    max-width: 650px;
+  }
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    top: 70px;
+    right: 0;
+  }
+}
+
+.example__slider-wrapper picture {
+  overflow: hidden;
+}
+
+.example__image {
+  max-width: none;
+  height: 100%;
+}
+
+.example__image--after {
+  margin-left: -100%;
 }

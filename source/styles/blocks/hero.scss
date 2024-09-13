@@ -1,7 +1,8 @@
 .hero {
-  background-image: url("../../images/index-background-mobile@2x.png");
+  background-image: linear-gradient(to bottom, (rgba(104, 183, 56, 0.85) 63%, #ffffff 63%)), url("../../images/index-background-mobile@2x.png");
+  background-color: rgb(68, 67, 70);
   background-position: top center;
-  background-size: contain;
+  background-size: 100%, contain;
   background-repeat: no-repeat;
   width: 100%;
   padding-top: 27px;
@@ -10,6 +11,7 @@
   @media (min-width: $tablet) {
     display: flex;
     flex-direction: column;
+    background-color: #ffffff;
     background-image: none;
     padding-top: 65px;
     margin-bottom: 0;
