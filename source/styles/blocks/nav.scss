@@ -18,6 +18,7 @@
   left: 0;
   top: 52px;
   text-align: center;
+  z-index: 1;
 
   @media (min-width: $tablet) {
     position: static;
