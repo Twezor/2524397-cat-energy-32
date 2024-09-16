@@ -8,7 +8,7 @@
   width: 100%;
   flex-wrap: wrap;
   gap: 24px;
-  padding: 20px;
+  padding: 21px 20px 19px;
 
   @media (min-width: $tablet) {
     justify-self: center;
@@ -61,8 +61,8 @@
   content: "";
   position: absolute;
   display: block;
-  width: 27px;
-  height: 17px;
+  width: 28px;
+  height: 22px;
   mask-image: url("../../icons/stack.svg#vkontakte");
   mask-position: center center;
   mask-repeat: no-repeat;
@@ -74,8 +74,8 @@
   position: absolute;
   display: block;
   mask-image: url("../../icons/stack.svg#youtube");
-  width: 24px;
-  height: 19px;
+  width: 28px;
+  height: 22px;
   mask-position: center center;
   mask-repeat: no-repeat;
   background-color: #666666;
@@ -86,8 +86,8 @@
   position: absolute;
   display: block;
   mask-image: url("../../icons/stack.svg#telegram");
-  width: 19px;
-  height: 17px;
+  width: 28px;
+  height: 22px;
   mask-position: center center;
   mask-repeat: no-repeat;
   background-color: #666666;

@@ -1,9 +1,9 @@
 .bonus {
   position: relative;
-  background-image: url("../../images/bonus-background-mobile@2x.png");
+  background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/bonus-background-mobile@2x.png");
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  background-position: center, center center;
+  background-size: auto, cover;
   background-color: $sec-bg;
   margin-top: 35px;
   padding-top: 187px;

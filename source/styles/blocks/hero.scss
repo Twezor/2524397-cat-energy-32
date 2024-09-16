@@ -1,12 +1,16 @@
 .hero {
   background-image: linear-gradient(to bottom, (rgba(104, 183, 56, 0.85) 63%, #ffffff 63%)), url("../../images/index-background-mobile@2x.png");
   background-color: rgb(68, 67, 70);
-  background-position: top center;
+  background-position: top, top center;
   background-size: 100%, contain;
   background-repeat: no-repeat;
   width: 100%;
   padding-top: 27px;
   margin-bottom: 20px;
+
+  @media (min-width: 500px) {
+    background-size: 100%, cover;
+  }
 
   @media (min-width: $tablet) {
     display: flex;
@@ -18,7 +22,13 @@
   }
 
   @media (min-width: $desktop) {
-    padding-top: 29px;
+    background-image: linear-gradient(to right, (#ffffff 50%,rgba(104, 183, 56, 0.85) 50%)), url("../../images/index-background-mobile@2x.png");
+    background-color: rgb(68, 67, 70);
+    background-position: top, right center;
+    background-size: 100%, contain;
+    background-repeat: no-repeat;
+    padding-top: 224px;
+    margin-bottom: 82px;
   }
 }
 
@@ -42,8 +52,8 @@
   }
 
   @media (min-width: $desktop) {
-    margin-top: 110px;
-    margin-left: 190px;
+    margin-top: 0;
+    margin-left: 80px;
   }
 }
 
@@ -52,7 +62,7 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 26px;
+  margin-bottom: 29px;
 
   @media (min-width: $tablet) {
     order: -2;
@@ -65,7 +75,7 @@
   }
 
   @media (min-width: $desktop) {
-    margin-left: 190px;
+    margin-left: 80px;
   }
 }
 
@@ -104,6 +114,6 @@
   }
 
   @media (min-width: $desktop) {
-    margin-left: 190px;
+    margin-left: 80px;
   }
 }

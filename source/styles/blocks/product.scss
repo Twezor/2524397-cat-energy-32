@@ -27,7 +27,7 @@
 .product__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-bottom: 17px;
+  margin-bottom: 13px;
 
   @media (min-width: $tablet) {
     display: flex;
@@ -51,7 +51,8 @@
   max-width: 76px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 14px;
+  margin-top: 1px;
+  margin-bottom: 15px;
 
   @media (min-width: $tablet) {
     max-width: 140px;

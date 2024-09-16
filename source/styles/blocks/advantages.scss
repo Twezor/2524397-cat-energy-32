@@ -7,9 +7,10 @@
   }
 
   @media (min-width: $desktop) {
+    max-width: 1220px;
+    margin: 0 auto;
     margin-top: 69px;
-    padding: 0 110px;
-    margin-bottom: 205px;
+    margin-bottom: 69px;
   }
 }
 
@@ -91,7 +92,7 @@
   content: "";
   position: absolute;
   background-image: url("../../icons/stack.svg#leaf");
-  background-size: 40px 40px;
+  background-size: 34px 34px;
   background-repeat: no-repeat;
   background-position: center center;
   background-color: $sec-bg;

@@ -1,5 +1,5 @@
 .example {
-  padding: 25px 20px 40px;
+  padding: 25px 20px 38px;
   background-color: #eaeaea;
   position: relative;
 
@@ -9,13 +9,19 @@
   }
 
   @media (min-width: $desktop) {
-    position: relative;
-    padding: 70px 110px 75px;
+    padding: 0;
+    padding-bottom: 75px;
     background-image: linear-gradient(to bottom, (#ffffff 22%, #f2f2f2 22%));
   }
 }
 
 .example__wrapper {
+  max-width: 1220px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.example__list-wrapper {
   @media (min-width: $tablet) {
     width: 100%;
     display: flex;
@@ -69,7 +75,7 @@
   list-style: none;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 34px;
+  margin-bottom: 32px;
 
   @media (min-width: $tablet) {
     margin: 0;
@@ -81,7 +87,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid #cdcdcd;
+  gap: 4px;
   border-radius: 5px;
 
   @media (min-width: $tablet) {
@@ -94,9 +100,10 @@
   text-transform: uppercase;
   display: flex;
   justify-content: center;
-  align-items: center;
+  padding-top: 12px;
   width: 124px;
   height: 56px;
+  border: 2px solid #cdcdcd;
 
   @media (min-width: $tablet) {
     font-size: 30px;
@@ -109,7 +116,7 @@
   text-transform: lowercase;
   width: 80px;
   text-align: center;
-  margin: -10px;
+  margin: -13px;
   background-color: #eaeaea;
 
   @media (min-width: $tablet) {
@@ -128,7 +135,7 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 
   @media (min-width: $tablet) {
     max-width: 174px;
@@ -153,7 +160,7 @@
   height: 100%;
   background-color: #666666;
   cursor: pointer;
-  left: 50%;
+  left: 49%;
 
   &:hover {
     background-color: $sec-bg;
@@ -207,8 +214,9 @@
   }
 
   @media (min-width: $desktop) {
+    height: 512px;
     position: absolute;
-    top: 70px;
+    top: 0;
     right: 0;
   }
 }
@@ -224,4 +232,8 @@
 
 .example__image--after {
   margin-left: -100%;
+
+  @media (min-width: $tablet) {
+    margin-left: -90%;
+  }
 }

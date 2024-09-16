@@ -14,37 +14,39 @@
 </head>
 
 <body class="body">
-  <header class="header header--catalog">
-    <a class="header__logo logo" href="index.html">
-      <picture>
-        <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
-        <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
-        <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
-      </picture>
-    </a>
-    <a class="header__text-logo text-logo" href="index.html">
-      <picture>
-        <source media="(min-width: 1440px)" srcset="images/text-logo-desktop.svg" width="118" height="21" type="image/svg+xml">
-        <source media="(min-width: 768px)" srcset="images/text-logo-tablet.svg" width="101" height="18" type="image/svg+xml">
-        <img src="images/text-logo-mobile.svg" width="101" height="18" alt="Cat Energy.">
-      </picture>
-    </a>
-    <nav class="header__nav nav">
-      <button class="nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a class="nav__link" href="index.html">Главная</a>
-        </li>
-        <li class="nav__item nav__item--current">
-          <a class="nav__link" href="#">Каталог продукции</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Подбор программы</a>
-        </li>
-      </ul>
-    </nav>
+  <header class="header">
+    <div class="header__wrapper">
+      <a class="header__logo logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+          <img class="logo__img" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+        </picture>
+      </a>
+      <a class="header__text-logo text-logo text-logo--catalog" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/text-logo-desktop.svg" width="118" height="21" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="images/text-logo-tablet.svg" width="101" height="18" type="image/svg+xml">
+          <img class="text-logo__img" src="images/text-logo-mobile.svg" width="101" height="18" alt="Cat Energy">
+        </picture>
+      </a>
+      <nav class="header__nav nav">
+        <ul class="nav__list nav__list--nojs nav__list--closed">
+          <li class="nav__item">
+            <a class="nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="nav__item nav__item--current">
+            <a class="nav__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Подбор программы</a>
+          </li>
+        </ul>
+        <button class="nav__toggle" type="button">
+          <span class="visually-hidden">Меню</span>
+        </button>
+      </nav>
+    </div>
   </header>
   <main class="main">
     <h1 class="main__title">Каталог продукции</h1>
@@ -321,7 +323,7 @@
         </article>
       </div>
       <div class="additional-products__bonus bonus">
-        <p class="bonus__text">Закажите все и получите чехол для кота в подарок!</p>
+        <p class="bonus__text">Закажите все <br> и получите чехол для кота в подарок!</p>
       </div>
     </section>
     <section class="subscribe">
@@ -335,7 +337,7 @@
     </section>
     <section class="contacts contacts--secondary">
       <div class="contacts__text">
-        <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <h2 class="contacts__title">Приглашаем <br> к сотрудничеству дилеров!</h2>
         <address class="contacts__address">
           <span class="contacts__street">ул. Большая Конюшенная, д. 19/8</span>
           <span class="contacts__city">Санкт-Петербург</span>
@@ -349,38 +351,40 @@
     </section>
   </main>
   <footer class="footer">
-    <a class="footer__text-logo text-logo" href="index.html">
-      <picture>
-        <source media="(min-width: 1440px)" srcset="images/text-logo-desktop.svg" width="128" height="24" type="image/svg+xml">
-        <source media="(min-width: 768px)" srcset="images/text-logo-tablet.svg" width="128" height="24" type="image/svg+xml">
-        <img src="images/text-logo-mobile.svg" width="128" height="24" alt="Текстовый логотип Cat Energy.">
-      </picture>
-    </a>
-    <ul class="footer__social-list social">
-      <li class="social__item">
-        <a class="social__link social__link--vk" href="#">
-          <span class="visually-hidden">Мы в Вконтакте</span>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--youtube" href="#">
-          <span class="visually-hidden">Мы в Youtube</span>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--tg" href="#">
-          <span class="visually-hidden">Мы в Telegram</span>
-        </a>
-      </li>
-    </ul>
-    <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
-      <span class="copyright__text">HTML Academy</span>
-      <picture>
-        <source media="(min-width: 1440px)" srcset="images/html-logo-desktop.svg" width="27" height="34" type="image/svg+xml">
-        <source media="(min-width: 768px)" srcset="images/html-logo-tablet.svg" width="27" height="34" type="image/svg+xml">
-        <img src="images/html-logo-mobile.svg" width="27" height="34" alt="Логотип HTML Academy">
-      </picture>
-    </a>
+    <div class="footer__wrap">
+      <a class="footer__text-logo text-logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/text-logo-desktop.svg" width="128" height="24" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="images/text-logo-tablet.svg" width="128" height="24" type="image/svg+xml">
+          <img class="text-logo__img" src="images/text-logo-mobile.svg" width="128" height="24" alt="Текстовый логотип Cat Energy.">
+        </picture>
+      </a>
+      <ul class="footer__social-list social">
+        <li class="social__item">
+          <a class="social__link social__link--vk" href="#">
+            <span class="visually-hidden">Мы в Вконтакте</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="#">
+            <span class="visually-hidden">Мы в Youtube</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--tg" href="#">
+            <span class="visually-hidden">Мы в Telegram</span>
+          </a>
+        </li>
+      </ul>
+      <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="copyright__text">HTML Academy</span>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/html-logo-desktop.svg" width="27" height="34" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="images/html-logo-tablet.svg" width="27" height="34" type="image/svg+xml">
+          <img class="copyright__img" src="images/html-logo-mobile.svg" width="27" height="34" alt="Логотип HTML Academy">
+        </picture>
+      </a>
+    </div>
   </footer>
 </body>
 

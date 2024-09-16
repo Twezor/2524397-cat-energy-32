@@ -7,8 +7,20 @@
 
 .subscribe__title {
   @include font($sec-font, $pr-font-style, $pr-font-weight, 24px, 24px, #000000);
+  position: relative;
   margin: 0;
   margin-bottom: 32px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 2px;
+    width: 108px;
+    top: 10px;
+    right: -20px;
+    background-color: #68b738;
+  }
 
   @media (min-width: $tablet) {
     font-size: 32px;
@@ -37,6 +49,8 @@
   @include font($sec-font, $pr-font-style, $pr-font-weight, 20px, 29px, #444444);
   width: 100%;
   padding: 13px;
+  padding-left: 11px;
+  padding-bottom: 10px;
   margin-bottom: 16px;
 }
 
