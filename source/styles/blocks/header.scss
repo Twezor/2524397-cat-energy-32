@@ -17,7 +17,7 @@
     justify-content: flex-start;
     padding-left: 30px;
     padding-right: 34px;
-    margin-top: 25px;
+    margin-top: 12px;
     margin-bottom: 0;
   }
 
@@ -48,11 +48,5 @@
 
   @media (min-width: $desktop) {
     margin-left: 14px;
-  }
-}
-
-.header__nav {
-  @media (min-width: $tablet) {
-    margin-left: auto;
   }
 }

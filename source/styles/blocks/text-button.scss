@@ -5,6 +5,18 @@
   text-decoration: none;
 
   @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.text-buttom--catalog {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.text-buttom--additional {
+  @media (min-width: $tablet) {
     font-size: 16px;
     line-height: 20px;
   }

@@ -1,15 +1,20 @@
 .subscribe {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 41px;
+  margin-bottom: 39px;
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: $tablet) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 .subscribe__title {
   @include font($sec-font, $pr-font-style, $pr-font-weight, 24px, 24px, #000000);
   position: relative;
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 31px;
 
   &::after {
     content: "";
@@ -17,12 +22,32 @@
     display: block;
     height: 2px;
     width: 108px;
-    top: 10px;
+    top: 9px;
     right: -20px;
     background-color: #68b738;
+
+    @media (min-width: $tablet) {
+      top: 14px;
+      right: -30px;
+      width: 456px;
+    }
+  }
+
+  &::before {
+    @media (min-width: $tablet) {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 2px;
+      width: 30px;
+      top: 14px;
+      left: -70px;
+      background-color: #68b738;
+    }
   }
 
   @media (min-width: $tablet) {
+    margin-left: 40px;
     font-size: 32px;
     line-height: 32px;
   }
@@ -48,9 +73,9 @@
 .subscribe__input {
   @include font($sec-font, $pr-font-style, $pr-font-weight, 20px, 29px, #444444);
   width: 100%;
-  padding: 13px;
+  padding: 12px;
   padding-left: 11px;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
   margin-bottom: 16px;
 }
 

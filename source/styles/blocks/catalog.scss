@@ -1,13 +1,19 @@
 .catalog {
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: $tablet) {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 49px;
+  }
 }
 
 .catalog__list {
   @media (min-width: $tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    gap: 70px 60px;
   }
 
   @media (min-width: $desktop) {

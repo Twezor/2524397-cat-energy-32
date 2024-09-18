@@ -13,22 +13,26 @@
   }
 
   @media (min-width: $tablet) {
+    width: 768px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
     background-image: none;
-    padding-top: 65px;
-    margin-bottom: 0;
+    padding-top: 51px;
   }
 
   @media (min-width: $desktop) {
-    background-image: linear-gradient(to right, (#ffffff 50%,rgba(104, 183, 56, 0.85) 50%)), url("../../images/index-background-mobile@2x.png");
+    width: 100%;
+    margin: 0;
+    background-image: linear-gradient(to right, (#ffffff 50%,rgba(104, 183, 56, 0.85) 50%)), url("../../images/index-background-desktop-full@2x.png");
     background-color: rgb(68, 67, 70);
-    background-position: top, right center;
+    background-position: top, right -321px bottom;
     background-size: 100%, contain;
     background-repeat: no-repeat;
     padding-top: 224px;
     margin-bottom: 82px;
+    padding-bottom: 52px;
   }
 }
 
@@ -53,7 +57,7 @@
 
   @media (min-width: $desktop) {
     margin-top: 0;
-    margin-left: 80px;
+    margin-left: 189px;
   }
 }
 
@@ -75,7 +79,8 @@
   }
 
   @media (min-width: $desktop) {
-    margin-left: 80px;
+    margin-left: 190px;
+    margin-bottom: 52px;
   }
 }
 
@@ -86,7 +91,7 @@
 
   @media (min-width: $tablet) {
     margin: 0;
-    margin-top: -75px;
+    margin-top: -83px;
     margin-left: 30px;
   }
 
@@ -114,6 +119,6 @@
   }
 
   @media (min-width: $desktop) {
-    margin-left: 80px;
+    margin-left: 190px;
   }
 }
