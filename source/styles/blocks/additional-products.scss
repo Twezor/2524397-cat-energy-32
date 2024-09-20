@@ -9,6 +9,8 @@
   }
 
   @media (min-width: $desktop) {
+    max-width: 1440px;
+    margin: 0 auto;
     margin-top: 21px;
   }
 }
@@ -100,5 +102,22 @@
     margin-left: 80px;
     font-size: 40px;
     line-height: 40px;
+  }
+}
+
+.additional-products__bonus {
+  background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/bonus-background-mobile@2x.png");
+  background-repeat: no-repeat;
+  background-position: center, center center;
+  background-size: auto, cover;
+  background-color: $sec-bg;
+
+  @media (min-width: $tablet) {
+    background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/bonus-background-tablet@2x.png");
+  }
+
+  @media (min-width: $desktop) {
+    background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/bonus-background-desktop@2x.png");
+    background-size: cover;
   }
 }

@@ -1,9 +1,5 @@
 .contacts {
   position: relative;
-
-  @media (min-width: $desktop) {
-    height: 400px;
-  }
 }
 
 .contacts__text {

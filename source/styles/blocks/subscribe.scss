@@ -11,7 +11,9 @@
   }
 
   @media (min-width: $desktop) {
-    padding-bottom: 65px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-bottom: 103px;
   }
 }
 
@@ -112,17 +114,18 @@
 .subscribe__input {
   @include font($sec-font, $pr-font-style, $pr-font-weight, 20px, 29px, #444444);
   width: 100%;
-  padding: 12px;
+  padding: 13px;
   padding-left: 11px;
   padding-bottom: 12px;
   margin-bottom: 16px;
+  border: 1px solid #cdcdcd;
 
   @media (min-width: $tablet) {
     margin-bottom: 0;
     width: 376px;
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
     width: 496px;
   }
 }

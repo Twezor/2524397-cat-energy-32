@@ -1,10 +1,4 @@
 .hero {
-  background-image: linear-gradient(to bottom, (rgba(104, 183, 56, 0.85) 63%, #ffffff 63%)), url("../../images/index-background-mobile@2x.png");
-  background-color: rgb(68, 67, 70);
-  background-position: top, top center;
-  background-size: 100%, contain;
-  background-repeat: no-repeat;
-  width: 100%;
   padding-top: 27px;
   margin-bottom: 20px;
 
@@ -23,13 +17,9 @@
   }
 
   @media (min-width: $desktop) {
-    width: 100%;
-    margin: 0;
-    background-image: linear-gradient(to right, (#ffffff 50%,rgba(104, 183, 56, 0.85) 50%)), url("../../images/index-background-desktop-full@2x.png");
-    background-color: rgb(68, 67, 70);
-    background-position: top, right -321px bottom;
-    background-size: 100%, contain;
-    background-repeat: no-repeat;
+    background: transparent;
+    width: 1440px;
+    margin: 0 auto;
     padding-top: 224px;
     margin-bottom: 82px;
     padding-bottom: 52px;
