@@ -5,6 +5,14 @@
   }
 }
 
+.header--catalog {
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet) {
+    border-bottom: 0 solid #d9d9d9;
+  }
+}
+
 .header__wrapper {
   position: relative;
   width: 100%;
@@ -31,11 +39,14 @@
   }
 }
 
-.header--catalog {
-  border-bottom: 1px solid #d9d9d9;
-
-  @media (min-width: $tablet) {
-    border-bottom: 0 solid #d9d9d9;
+.header__wrapper--catalog {
+  @media (min-width: $desktop) {
+    max-width: 1220px;
+    position: static;
+    padding: 0;
+    margin: 0 auto;
+    justify-content: flex-start;
+    margin-top: 55px;
   }
 }
 

@@ -10,6 +10,17 @@
     padding: 26px 38px;
     grid-template-columns: auto 200px 93px;
   }
+
+  @media (min-width: $desktop) {
+    border-right: none;
+    border-left: none;
+    grid-template-columns: auto 203px 102px 244px;
+    gap: 10px;
+    padding: 0;
+    padding-top: 14px;
+    padding-bottom: 17px;
+    align-items: center;
+  }
 }
 
 .additional__link {
@@ -32,6 +43,12 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+    padding: 0;
+    margin-left: 1px;
+  }
 }
 
 .additional__quantity {
@@ -44,6 +61,13 @@
     font-size: 16px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktop) {
+    justify-self: start;
+    margin: 0;
+    padding: 0;
+    padding-top: 6px;
+  }
 }
 
 .additional__price {
@@ -55,6 +79,13 @@
     margin-right: 2px;
     font-size: 16px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    justify-self: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
   }
 }
 
@@ -69,5 +100,11 @@
   @media (min-width: $tablet) {
     grid-row: 2;
     grid-column: -1/1;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+    grid-row: 1;
+    grid-column: 4;
   }
 }

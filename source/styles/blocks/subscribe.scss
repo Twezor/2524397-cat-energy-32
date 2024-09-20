@@ -7,6 +7,11 @@
   @media (min-width: $tablet) {
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 41px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 65px;
   }
 }
 
@@ -31,6 +36,12 @@
       right: -30px;
       width: 456px;
     }
+
+    @media (min-width: $desktop) {
+      top: 18px;
+      right: -30px;
+      width: 1037px;
+    }
   }
 
   &::before {
@@ -44,9 +55,16 @@
       left: -70px;
       background-color: #68b738;
     }
+
+    @media (min-width: $desktop) {
+      top: 18px;
+      left: -110px;
+      width: 70px;
+    }
   }
 
   @media (min-width: $tablet) {
+    margin-bottom: 67px;
     margin-left: 40px;
     font-size: 32px;
     line-height: 32px;
@@ -55,6 +73,8 @@
   @media (min-width: $desktop) {
     font-size: 40px;
     line-height: 40px;
+    margin-left: 80px;
+    margin-bottom: 73px;
   }
 }
 
@@ -67,6 +87,25 @@
   @media (min-width: $tablet) {
     font-size: 24px;
     line-height: 32px;
+    padding-right: 66px;
+    padding-left: 66px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 298px;
+  }
+}
+
+.subscribe__form {
+  @media (min-width: $tablet) {
+    display: flex;
+    margin-left: 38px;
+    margin-right: 38px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 752px;
+    margin: 0 auto;
   }
 }
 
@@ -77,6 +116,15 @@
   padding-left: 11px;
   padding-bottom: 12px;
   margin-bottom: 16px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+    width: 376px;
+  }
+
+  @media (min-width: $tablet) {
+    width: 496px;
+  }
 }
 
 .subscribe__input::placeholder {
@@ -90,4 +138,8 @@
   text-align: center;
   padding-top: 15px;
   padding-bottom: 15px;
+
+  @media (min-width: $tablet) {
+    width: 256px;
+  }
 }

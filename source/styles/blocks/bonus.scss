@@ -18,6 +18,15 @@
     padding: 72px 125px 68px 421px;
     margin-bottom: 80px;
   }
+
+  @media (min-width: $desktop) {
+    background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/bonus-background-desktop@2x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 245px;
+    padding: 185px 42px 43px;
+    margin: 0;
+  }
 }
 
 .bonus__text {
@@ -30,6 +39,10 @@
   @media (min-width: $tablet) {
     margin: 0;
     text-align: left;
+  }
+
+  @media (min-width: $desktop) {
+    text-align: center;
   }
 }
 
@@ -47,5 +60,10 @@
   @media (min-width: $tablet) {
     top: 58px;
     left: 118px;
+  }
+
+  @media (min-width: $desktop) {
+    top: 56px;
+    left: 123px;
   }
 }

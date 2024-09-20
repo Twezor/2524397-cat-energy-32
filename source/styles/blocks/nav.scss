@@ -32,6 +32,7 @@
   @media (min-width: $tablet) {
     position: static;
     display: flex;
+    flex-wrap: wrap;
     gap: 33px;
   }
 }
@@ -98,6 +99,25 @@
   }
 }
 
+.nav__item--current-catalog::after {
+  @media (min-width: $tablet) {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #68b738;
+    height: 2px;
+    width: 100%;
+    top: 32px;
+    left: 0;
+  }
+
+  @media (min-width: $desktop) {
+    top: 36px;
+    left: 2px;
+    width: 100%;
+  }
+}
+
 .nav__toggle {
   display: block;
   position: relative;
@@ -148,4 +168,8 @@
     line-height: 30px;
     color: #ffffff;
   }
+}
+
+.nav__link--catalog {
+  color: #000000;
 }

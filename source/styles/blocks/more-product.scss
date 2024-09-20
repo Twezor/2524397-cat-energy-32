@@ -9,6 +9,10 @@
     align-self: end;
     border: 2px solid #f2f2f2;
   }
+
+  @media (min-width: $desktop) {
+    padding: 48px 37px 40px;
+  }
 }
 
 .more-product::after {
@@ -59,6 +63,13 @@
     line-height: 24px;
   }
 
+  @media (min-width: $desktop) {
+    padding: 0;
+    margin: 0;
+    padding-top: 100px;
+    margin-bottom: 26px;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -72,6 +83,11 @@
 
     @media (min-width: $tablet) {
       top: 28px;
+      width: 60px;
+    }
+
+    @media (min-width: $desktop) {
+      top: 31px;
       width: 60px;
     }
   }
@@ -104,6 +120,12 @@
     margin-bottom: 82px;
     font-size: 16px;
     line-height: 18px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 90px;
   }
 }
 
