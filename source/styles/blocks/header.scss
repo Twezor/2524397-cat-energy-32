@@ -51,9 +51,10 @@
 }
 
 .header__text-logo {
-  margin-top: 4px;
+  margin-top: 6px;
 
   @media (min-width: $tablet) {
+    margin-top: 5px;
     margin-left: 13px;
   }
 

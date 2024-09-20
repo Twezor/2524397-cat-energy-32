@@ -11,6 +11,7 @@
   justify-content: space-between;
   margin-bottom: 26px;
   padding: 27px 20px 0;
+  z-index: 1;
 
   @media (min-width: $tablet) {
     max-width: 100%;
@@ -96,5 +97,21 @@
 .contacts__city {
   @media (min-width: $tablet) {
     margin-bottom: 1px;
+  }
+}
+
+.contacts__wrapper {
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 113px;
+    height: 106px;
+    background-image: url("../../icons/stack.svg#map-icon");
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%, -96%);
   }
 }
