@@ -56,7 +56,31 @@
   position: relative;
   width: 28px;
   height: 22px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover.social__link--vk::after,
+  &:hover.social__link--youtube::after,
+  &:hover.social__link--tg::after {
+    background-color: #68b738;
+  }
+
+  &:focus.social__link--vk::after,
+  &:focus.social__link--youtube::after,
+  &:focus.social__link--tg::after {
+    background-color: #68b738;
+  }
+
+  &:active.social__link--vk::after,
+  &:active.social__link--youtube::after,
+  &:active.social__link--tg::after {
+    opacity: 0.3;
+    background-color: #68b738;
+  }
 }
+
 
 .social__link--vk::after {
   content: "";

@@ -85,7 +85,16 @@
     line-height: 60px;
   }
 
+  @media (min-width: 1075px) {
+    max-width: 704px;
+    margin: 0 auto;
+    margin-bottom: 49px;
+  }
+
   @media (min-width: $desktop) {
+    max-width: 1440px;
+    margin: 0;
+    margin-bottom: 49px;
     gap: 80px;
   }
 }

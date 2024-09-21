@@ -203,8 +203,14 @@
     left: 278px;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
+    outline: none;
     background-color: $sec-bg;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
   }
 
   &::before {
@@ -238,12 +244,22 @@
     transform: translateY(-50%);
   }
 
-  &:hover::before {
+  &:hover::before,
+  &:focus::before {
     border-color: $sec-bg;
   }
 
-  &:hover::after {
+  &:active::before {
+    border-color: #5eaa2f;
+  }
+
+  &:hover::after,
+  &:focus::after {
     background-color: $sec-bg;
+  }
+
+  &:active::after {
+    background-color: #5eaa2f;
   }
 }
 

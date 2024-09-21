@@ -68,6 +68,11 @@
     top: 15px;
   }
 
+  @media (min-width: 1100px) {
+    left: 593px;
+    top: 15px;
+  }
+
   @media (min-width: $desktop) {
     width: 100px;
     height: 100px;
@@ -94,6 +99,11 @@
     left: 423px;
   }
 
+  @media (min-width: 1100px) {
+    top: 4px;
+    left: 623px;
+  }
+
   @media (min-width: $desktop) {
     width: 70px;
     height: 97px;
@@ -117,6 +127,11 @@
     width: 268px;
     height: 112px;
     left: 363px;
+    top: 58px;
+  }
+
+  @media (min-width: 1100px) {
+    left: 563px;
     top: 58px;
   }
 
@@ -174,8 +189,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 47%;
-    transform: translateY(-50%);
+    top: 35%;
     width: 36px;
     height: 12px;
     background-image: url("../../icons/stack.svg#arrow");
@@ -185,13 +199,23 @@
     transform-origin: left center;
 
     @media (min-width: $tablet) {
-      top: 49%;
+      top: 35%;
       margin-left: 24px;
     }
   }
 
+  &:hover,
+  &:focus {
+    outline: none;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &:hover::after {
-    transform: scaleX(2);
+    transform: scaleX(1.5);
   }
 
   @media (min-width: $tablet) {

@@ -41,12 +41,34 @@
   display: block;
 }
 
+.product__link-img {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .product__link {
   text-decoration: none;
 
   @media (min-width: $tablet) {
     display: flex;
     justify-content: center;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
