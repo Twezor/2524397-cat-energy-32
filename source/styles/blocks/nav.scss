@@ -38,8 +38,13 @@
 }
 
 .nav__list--nojs {
-  display: block;
-  position: static;
+  @media (max-width: 767px) {
+    display: block;
+    position: static;
+    padding-top: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    width: 260px;
+  }
 }
 
 .nav__list--nojs + .nav__toggle {
@@ -61,6 +66,23 @@
     display: block;
   }
 }
+
+.nav__list--opened + .nav__toggle {
+  background-color: #ffffff;
+}
+
+.nav__list--opened + .nav__toggle::before {
+  opacity: 1;
+  transform: translateY(8px) rotate(-45deg);
+  transition: bottom 0.3s, transform 0.3s 0.15s;
+}
+
+.nav__list--opened + .nav__toggle::after {
+  opacity: 1;
+  transform: translateY(-8px) rotate(45deg);
+  transition: bottom 0.3s, transform 0.3s 0.15s;
+}
+
 
 .nav__item {
   position: relative;

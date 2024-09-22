@@ -10,6 +10,8 @@
   <link rel="apple-touch-icon" href="favicons/favicon-180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -54,6 +56,10 @@
         <h1 class="hero__title">Функциональное питание для котов</h1>
         <p class="hero__subtitle">Занялся собой? Займись котом!</p>
         <picture>
+          <source width="552" height="499" type="image/webp" media="(min-width: 1440px)" srcset="images/hero-desktop@1x.webp 1x, images/hero-desktop@2x.webp 2x">
+          <source width="709" height="609" type="image/webp" media="(min-width: 768px)" srcset="images/hero-tablet@1x.webp 1x, images/hero-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="images/hero-mobile@1x.webp 1x, images/hero-mobile@2x.webp 2x" width="280" height="270">
+
           <source width="552" height="449" type="image/png" media="(min-width: 1440px)" srcset="images/hero-desktop@1x.png 1x, images/hero-desktop@2x.png 2x">
           <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/hero-tablet@1x.png 1x, images/hero-tablet@2x.png 2x">
           <img class="hero__img" src="images/hero-mobile@1x.png" srcset="images/hero-mobile@2x.png 2x" width="280" height="270" alt="Питание cat energy pro с курицей">
@@ -112,7 +118,9 @@
         </div>
         <div class="example__slider-wrapper">
           <picture>
-            <source width="560" height="512" type="image/png" media="(min-width: 1440px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x">
+            <source width="560" height="512" type="image/webp" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.webp 1x, images/cat-before-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="images/cat-before-mobile@1x.webp 1x, images/cat-before-mobile@2x.webp 2x" width="280" height="256">
+
             <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x">
             <img class="example__image example__image--before" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Кот до питания Cat energy">
           </picture>
@@ -120,7 +128,9 @@
             <span class="visually-hidden">Ползунок для сравнения кота до и после питания Cat energy</span>
           </button>
           <picture>
-            <source width="560" height="512" type="image/png" media="(min-width: 1440px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x">
+            <source width="560" height="512" type="image/webp" media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.webp 1x, images/cat-after-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="images/cat-after-mobile@1x.webp 1x, images/cat-after-mobile@2x.webp 2x" width="280" height="256">
+
             <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x">
             <img class="example__image example__image--after" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Кот после питания Cat energy">
           </picture>

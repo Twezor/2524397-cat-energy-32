@@ -119,6 +119,7 @@
   padding-bottom: 12px;
   margin-bottom: 16px;
   border: 1px solid #cdcdcd;
+  cursor: pointer;
 
   @media (min-width: $tablet) {
     margin-bottom: 0;
@@ -127,6 +128,18 @@
 
   @media (min-width: $desktop) {
     width: 496px;
+  }
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    border: 1px  solid #444444;
+  }
+
+  &:invalid {
+    border: 1px solid #ff8282;
   }
 }
 
