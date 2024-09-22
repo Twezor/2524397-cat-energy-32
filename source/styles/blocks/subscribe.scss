@@ -1,4 +1,5 @@
 .subscribe {
+  position: relative;
   margin-top: 41px;
   margin-bottom: 39px;
   padding-left: 20px;
@@ -15,74 +16,60 @@
     margin: 0 auto;
     padding-bottom: 103px;
   }
-}
-
-.subscribe__title {
-  @include font($sec-font, $pr-font-style, $pr-font-weight, 24px, 24px, #000000);
-  position: relative;
-  margin: 0;
-  margin-bottom: 31px;
 
   &::after {
     content: "";
     position: absolute;
     display: block;
+    overflow-x: hidden;
     height: 2px;
-    width: 108px;
-    top: 9px;
-    right: -20px;
+    left: -100%;
+    width: 1000%;
     background-color: #68b738;
+    top: 10px;
 
     @media (min-width: $tablet) {
-      top: 14px;
-      right: -30px;
-      width: 456px;
+      top: 13px;
     }
 
     @media (min-width: $desktop) {
-      top: 18px;
-      right: -30px;
-      width: 1037px;
+      top: 16px;
     }
   }
+}
 
-  &::before {
-    @media (min-width: $tablet) {
-      content: "";
-      position: absolute;
-      display: block;
-      height: 2px;
-      width: 30px;
-      top: 14px;
-      left: -70px;
-      background-color: #68b738;
-    }
-
-    @media (min-width: $desktop) {
-      top: 18px;
-      left: -110px;
-      width: 70px;
-    }
-  }
+.subscribe__title {
+  @include font($sec-font, $pr-font-style, $pr-font-weight, 24px, 24px, #000000);
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 31px;
+  margin-left: -20px;
+  padding-left: 20px;
+  padding-right: 40px;
+  position: relative;
+  background-color: #ffffff;
+  z-index: 1;
 
   @media (min-width: $tablet) {
-    margin-bottom: 67px;
-    margin-left: 40px;
+    margin-bottom: 66px;
     font-size: 32px;
     line-height: 32px;
+    margin-left: 0;
+    padding-left: 40px;
   }
 
   @media (min-width: $desktop) {
     font-size: 40px;
     line-height: 40px;
-    margin-left: 80px;
-    margin-bottom: 73px;
+    margin-left: 40px;
+    padding-left: 40px;
+    margin-bottom: 71px;
   }
 }
 
 .subscribe__text {
   @include font($sec-font, $pr-font-style, $pr-font-weight, 16px, 24px, #000000);
-  display: inline-block;
+  display: block;
   text-align: center;
   margin-bottom: 24px;
 
@@ -91,10 +78,6 @@
     line-height: 32px;
     padding-right: 66px;
     padding-left: 66px;
-  }
-
-  @media (min-width: $desktop) {
-    margin-left: 298px;
   }
 }
 
