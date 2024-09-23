@@ -2,7 +2,7 @@
   position: relative;
   padding-left: 20px;
   padding-right: 20px;
-  margin-top: 25px;
+  margin-top: 26px;
 
   @media (min-width: $tablet) {
     padding-left: 30px;
@@ -54,16 +54,6 @@
   }
 }
 
-.additional-products__list::before {
-  position: absolute;
-  content: "";
-  display: block;
-  top: 100%;
-  width: 100%;
-  height: 1px;
-  background-color: #ebebeb;
-}
-
 .additional-products__title {
   @include font($sec-font, $pr-font-style, $pr-font-weight, 24px, 24px, #000000);
   display: inline-block;
@@ -88,6 +78,7 @@
     margin-top: 1px;
     margin-left: 40px;
     padding-left: 40px;
+    margin-bottom: 81px;
     font-size: 40px;
     line-height: 40px;
   }

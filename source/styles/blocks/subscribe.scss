@@ -101,7 +101,7 @@
   padding-left: 11px;
   padding-bottom: 12px;
   margin-bottom: 16px;
-  border: 1px solid #cdcdcd;
+  border: 2px solid #cdcdcd;
   cursor: pointer;
 
   @media (min-width: $tablet) {
@@ -118,11 +118,15 @@
   }
 
   &:focus {
-    border: 1px  solid #444444;
+    border: 2px solid #444444;
   }
 
-  &:invalid {
-    border: 1px solid #ff8282;
+  &--error {
+    border: 2px solid #ff8282;
+  }
+
+  &--valid {
+    border: 2px solid #5eaa2f;
   }
 }
 
