@@ -14,9 +14,9 @@ navToggle.addEventListener('click', () => {
 });
 
 const input = document.querySelector('.subscribe__input');
-const subsButton = document.querySelector('.subscribe__button');
+const subButton = document.querySelector('.subscribe__button');
 
-subsButton.addEventListener('click', () => {
+subButton.addEventListener('click', () => {
   if (input.checkValidity()) {
     input.classList.add('subscribe__input--valid');
   } else {
